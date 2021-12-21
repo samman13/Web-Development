@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            div {
+        width: 610px;
+        margin: auto;
+      }
+      form {
+        padding: 10px;
+      }
+      body {
+        font-family: sans-serif;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+      table {
+        border-collapse: collapse;
+        padding: 10px;
+        caption-side: bottom;
+      }
+      input[type="email"] {
+        width: 90%;
+      }
+      .red {
+        color: red;
+      }
+      </style>
+</head>
+<body>
+    <div>
+      <form action="form.php">
+        <table>
+                       
+        <tr>
+            <th colspan="4">Student Registration</th>
+        </tr>
+        <tr>
+           <td>
+             <label for="fname"><span class="red">*</span>First Name:</label>
+             </td>
+             <td>
+               <input type="text" name="fname" id="firstname">
+            </td>
+            <td>
+           <label for="lname">Last Name:</label>
+          </td>
+             <td>
+               <input type="text" name="lname" id="lastname">
+              </td>
+        </tr>
+        <tr>
+          <td>  
+          <label for="Semester"><span class="red">*</span>Semester:</label>
+          </td>
+          <td colspan="4">
+            <label><input type="radio" name="semester" value="1">I</label>
+            <label><input type="radio" name="semester" value="2">II</label>
+            <label><input type="radio" name="semester" value="3">III</label>
+            <label><input type="radio" name="semester" value="4">IV</label>
+            <label><input type="radio" name="semester" value="5">V</label>
+            <label><input type="radio" name="semester" value="6">VI</label>
+           </td>
+            </tr>
+            <tr>
+              <td>
+               <label for="Faculty"><span class="red">*</span>Faculty:</label>
+               </td>
+               <td>
+                 <select name="Faculty" id="Computer Science">
+                  <option value="No-Faculty">-Choose Faculty</option>
+                  <option value="CE">Civil Engineering</option>
+                  <option value="IT">IT Engineering</option>
+                  <option value="CE">Computer Engineering</option>
+                  <option value="EE">Electronics Engineering</option>
+                 </select>
+                </td>
+                <td>
+                  <label for="Gender"><span class="red">*</span>Gender:</label>
+                  </td>
+                  <td>
+                    <label><input type="radio" name="Gender" id="M" required>Male</label>
+                    <label><input type="radio" name="Gender" id="F" required>Female</label>
+                </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="email"><span class="red">*</span>Email:</label>
+              </td>
+              <td colspan="3"><input type="email" id="email" name="email" /></td>
+            </tr>
+            <tr>
+              <th colspan="2">
+                <input type="submit" value="Submit" />
+              </th>
+              <th colspan="2">
+                <input type="reset" value="Reset" />
+              </th>
+            </tr>
+        </table>
+      </form>
+      <p align="center">&copy; Samman Basnet WT NCIT 2021</p>
+    </div>
+</body>
+</html>
